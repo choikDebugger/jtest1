@@ -2,9 +2,14 @@
 pipeline {
     agent { docker { image 'python:3.10.7-alpine' } }
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
                 sh 'python --version'
+                sh 'echo "Hell World"'
+                sh '''
+                    echo "Multiline what?"
+                    ls -lah
+                '''
             }
         }
     }
