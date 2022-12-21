@@ -10,6 +10,7 @@ pipeline {
                     echo "Multiline what?"
                     ls -lah
                 '''
+                sh 'chmod +x ./ss.sh'
                 sh './ss.sh'
             }
         }
