@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'python --version'
                 sh 'echo "Hell World"'
                 sh '''
                     echo "Multiline what?"
