@@ -10,6 +10,7 @@ pipeline {
                     echo "Multiline what?"
                     ls -lah
                 '''
+                sh 'docker run hello-world'
             }
         }
     }
